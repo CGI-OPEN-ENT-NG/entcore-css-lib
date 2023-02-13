@@ -69,6 +69,11 @@ i {
     content: '\F0140'
   }
 
+  &.magneto-chevron-up::before {
+    font-family: 'magneto-mdi';
+    content: '\F0143'
+  }
+
   &.magneto-magnify::before {
     font-family: 'magneto-mdi';
     content: '\F0349';
@@ -198,5 +203,15 @@ i {
   &.magneto-play::before {
     font-family: 'magneto-mdi';
     content: '\F040A';
+  }
+
+  &.magneto-lock::before {
+    font-family: 'magneto-mdi';
+    content: '\F033E';
+  }
+
+  &.magneto-unlock::before {
+    font-family: 'magneto-mdi';
+    content: '\F033F';
   }
 }
