@@ -1,0 +1,16 @@
+div.crre-timeline-new-notification {
+    display: flex;
+    align-items: center;
+}
+  
+div[data-ng-controller="Timeline"] {
+    div.notification.crre {
+        > article {
+            > div.row {
+                > div.avatar {
+                    display: none;
+                }
+            }
+        }
+    }
+}
