@@ -24,7 +24,9 @@
     margin-bottom: 24px;
 
     .card-comment {
-      @include noTextOverflow(2);
+      &-content {
+        @include noTextOverflow(3);
+      }
     }
   }
 }

@@ -64,7 +64,7 @@
     text-align: center;
 
     .type-icon {
-      height: 18vh;
+      height: 13vh;
       margin: auto;
       object-fit: contain;
     }
@@ -105,9 +105,10 @@
   }
 
   &-type {
-    background-color: $magneto-white;
-    border: 5px solid $magneto-white;
+    background-color: $magneto-lighter-light-grey;
+    border: 5px solid $magneto-lighter-light-grey;
     border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -134,6 +135,7 @@
       font-size: 16px;
       font-weight: bold;
       margin-bottom: 5px;
+      height: 3vh;
 
       &-ellipsis {
         @include noTextOverflow(1);
@@ -144,22 +146,25 @@
       }
     }
 
-    &-locked {
-      position: absolute;
-      bottom: 5px;
-      right: 5px;
-      font-size: 20px;
-    }
-  }
+    &-footer {
 
-  &-caption {
+      height: 3vh;
 
-    &-tooltip {
-      color: $magneto-black;
-      font-style: italic;
-      font-size: 0.9em;
-      width: 90%;
-      @include noTextOverflow(2);
+      &-caption {
+        color: $magneto-black;
+        font-style: italic;
+        font-size: 0.9em;
+        width: 90%;
+        @include noTextOverflow(1);
+      }
+
+      &-locked {
+        position: relative;
+        font-size: 20px;
+        display: flex;
+        justify-content: flex-end;
+        height: 3vh;
+      }
     }
   }
 

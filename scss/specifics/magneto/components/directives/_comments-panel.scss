@@ -25,7 +25,7 @@
   flex-direction: column;
 
   &-button {
-    font-size: 32px;
+    font-size: 20px;
   }
 
   &-list {
@@ -54,7 +54,7 @@
     &-items {
 
       max-height: 80%;
-      overflow-y: scroll !important;
+      overflow-y: auto !important;
 
       &-item {
         padding: 8px;
