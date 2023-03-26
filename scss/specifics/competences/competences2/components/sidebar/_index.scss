@@ -1,0 +1,33 @@
+@mixin sidebar-icon-after {
+  &::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    display: block;
+    background-color: transparent;
+    width: 5px;
+  }
+}
+
+@mixin sidebar-icon-hover-active {
+  &:hover {
+    color: $competences-orange;
+  }
+
+  &.active, &:hover {
+    > i::after {
+      background-color: $competences-orange;
+    }
+  }
+}
+
+@mixin sidebar-sub-item {
+  color: $black;
+  position: relative;
+}
+
+@import "sidebar";
+@import "sidebar-item";
+@import "subsidebar";

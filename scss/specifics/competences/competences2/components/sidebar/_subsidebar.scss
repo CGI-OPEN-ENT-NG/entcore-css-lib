@@ -1,0 +1,38 @@
+.subsidebar {
+  position: absolute;
+  font-size: 16px;
+  min-width: 200px;
+  top: 0;
+  color: $black;
+  background-color: $white;
+  box-shadow: 0 2px 5px rgba(0,0,0,.26);
+  transition: all .5s cubic-bezier(0.25, 0.8, 0.25, 1);
+  left: -500%;
+  z-index: -1;
+  text-align: left;
+  &-title {
+    color: $competences-orange;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 16px 10px;
+  }
+  &-items {
+    &-item {
+      display: flex;
+      align-items: center;
+      @include sidebar-sub-item;
+      @include sidebar-icon-after;
+      @include sidebar-icon-hover-active;
+      i {
+        font-size: 22px;
+        display: inline-block;
+        text-align: center;
+        @include sidebar-icon-after;
+        margin: 0 12px 0 10px;
+      }
+      &-label {
+        font-size: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+i {
+  &.competences-home::before {
+    font-family: 'competences-material-icons';
+    content: "\F56E";
+  }
+  &.competences-chart::before {
+   font-family: 'competences-material-icons';
+   content: "\FEB0";
+  }
+  &.competences-orientations::before {
+    font-family: 'competences-material-icons';
+    content: "\F00E";
+  }
+  &.competences-exports::before {
+    font-family: 'competences-material-icons';
+    content: "\F1DA";
+  }
+  &.competences-note::before {
+    font-family: 'competences-material-icons';
+    content: "\F14D";
+  }
+}
+

@@ -1,0 +1,26 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: $portal-header-height;
+  height: calc(100% - #{$portal-header-height});
+  background-color: $white;
+  width: $navbar-width;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+
+  &-items {
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,.26);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $white;
+    &-sidebarItem {
+      width: 100%;
+    }
+  }
+}

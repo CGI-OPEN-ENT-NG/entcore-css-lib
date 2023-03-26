@@ -1,0 +1,33 @@
+.sidebarItem {
+  display: block;
+  color: $black;
+  background: $white;
+  text-align: center;
+  font-size: 24px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  height: 55px;
+
+  &-item {
+    @include sidebar-sub-item;
+    display: block;
+    i {
+      @include sidebar-icon-after;
+    }
+    &-label {
+      font-size: 12px;
+      display: block;
+      line-height: 16px;
+      overflow-wrap: anywhere
+    }
+    @include sidebar-icon-hover-active
+  }
+
+  &:hover {
+    .subsidebar {
+      left: 100%;
+      z-index: -1;
+    }
+  }
+}
