@@ -1,0 +1,19 @@
+$baseMultiplicator: 8;
+$moduleName: "crre";
+
+@mixin margin-list {
+  @for $i from 1 through 16 {
+    .#{$moduleName}-margin-#{$i * $baseMultiplicator} { margin: #{$i * $baseMultiplicator}px }
+    .#{$moduleName}-margin-top-#{$i * $baseMultiplicator} { margin-top: #{$i * $baseMultiplicator}px }
+    .#{$moduleName}-margin-bottom-#{$i * $baseMultiplicator} { margin-bottom: #{$i * $baseMultiplicator}px }
+    .#{$moduleName}-margin-left-#{$i * $baseMultiplicator} { margin-left: #{$i * $baseMultiplicator}px }
+    .#{$moduleName}-margin-right-#{$i * $baseMultiplicator} { margin-right: #{$i * $baseMultiplicator}px }
+    .#{$moduleName}-padding-#{$i * $baseMultiplicator} { padding: #{$i * $baseMultiplicator}px }
+    .#{$moduleName}-padding-top-#{$i * $baseMultiplicator} { padding-top: #{$i * $baseMultiplicator}px }
+    .#{$moduleName}-padding-bottom-#{$i * $baseMultiplicator} { padding-bottom: #{$i * $baseMultiplicator}px }
+    .#{$moduleName}-padding-left-#{$i * $baseMultiplicator} { padding-left: #{$i * $baseMultiplicator}px }
+    .#{$moduleName}-padding-right-#{$i * $baseMultiplicator} { padding-right: #{$i * $baseMultiplicator}px }
+  }
+}
+
+@include margin-list;
