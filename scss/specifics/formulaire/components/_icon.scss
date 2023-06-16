@@ -109,7 +109,6 @@ i {
   &.i-cancel::before {
     font-family: 'formulaire-mdi';
     content: "\F156";
-    color: magenta;
   }
 
   &.i-chevron-down::before {
@@ -240,6 +239,11 @@ i {
 
   &.i-image::before {
     font-family: 'formulaire-mdi';
-    content: "\E3F4";
+    content: "\F2E9";
+  }
+
+  &.i-close::before {
+    font-family: 'formulaire-mdi';
+    content: "\F159";
   }
 }
