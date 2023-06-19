@@ -162,6 +162,39 @@
               flex-direction: column;
               align-items: center;
             }
+
+            question-type-singleanswer, question-type-multipleanswer {
+
+              /* Ajuster la taille de <image-select> */
+              .image-select {
+                width: 100px;
+                height: 100px;
+              }
+
+              /* Ajuster la taille de l'image dans la directive <image-select> */
+              .image-select .initialFloat.cell img {
+                width: 100px;
+                height: 100px;
+              }
+
+              /* Ajuster la taille de l'image affichée dans la balise <img> */
+              img {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+              }
+
+              .image-container {
+                position: relative;
+                width: 125px;
+              }
+
+              .image-container .i-close {
+                position: absolute;
+                top: 0;
+                right: 0;
+              }
+            }
           }
 
           .question-bottom, .section-bottom {
