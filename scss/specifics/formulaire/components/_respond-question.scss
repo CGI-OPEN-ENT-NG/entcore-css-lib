@@ -33,6 +33,26 @@
           height: inherit;
         }
       }
+
+      .image-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-flow: wrap;
+
+        img {
+          width: 150px;
+          height: 150px;
+          object-fit: cover;
+          margin-bottom: 15px;
+        }
+
+        .choice-image {
+          display: flex;
+          flex-direction: column-reverse;
+          margin-bottom: 15px;
+        }
+      }
     }
 
     &-edit {
