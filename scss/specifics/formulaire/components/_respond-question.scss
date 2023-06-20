@@ -44,12 +44,16 @@
           width: 150px;
           height: 150px;
           object-fit: cover;
-          margin-bottom: 15px;
+          margin-top: 15px;
+        }
+
+        input[type="text"] {
+          margin-top: 10px;
         }
 
         .choice-image {
           display: flex;
-          flex-direction: column-reverse;
+          flex-direction: column;
           margin-bottom: 15px;
         }
       }
