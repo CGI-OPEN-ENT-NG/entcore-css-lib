@@ -5,6 +5,30 @@
   flex-direction: column;
   align-items: center;
 
+  .image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+
+    img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-top: 15px;
+    }
+
+    input[type="text"] {
+      margin-top: 10px;
+    }
+
+    .choice-image {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+  }
+
   .question {
     padding: 2% 3% 2% 3%;
     background: $formulaire-white;
@@ -31,30 +55,6 @@
         @media screen and (max-width: $formulaire-screen-mobile) {
           position: inherit;
           height: inherit;
-        }
-      }
-
-      .image-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-flow: wrap;
-
-        img {
-          width: 150px;
-          height: 150px;
-          object-fit: cover;
-          margin-top: 15px;
-        }
-
-        input[type="text"] {
-          margin-top: 10px;
-        }
-
-        .choice-image {
-          display: flex;
-          flex-direction: column;
-          margin-bottom: 15px;
         }
       }
     }
